@@ -1,0 +1,226 @@
+/* === Base Reset === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9fafb;
+    color: #333;
+    padding: 2rem;
+  }
+  
+  /* === Layout Container === */
+  .profile-form-container {
+    background: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.08);
+    max-width: 1100px;
+    margin: 3rem auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    padding: 2.5rem;
+  }
+  
+  /* === Profile Picture Section === */
+  .profile-picture-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    border-right: 1px solid #eaeaea;
+  }
+  
+  .profile-picture-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #222;
+  }
+  
+  .avatar-upload {
+    position: relative;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #007bff;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s;
+  }
+  
+  .avatar-upload:hover {
+    border-color: #0056b3;
+  }
+  
+  .avatar-preview {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .avatar-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .placeholder {
+    background-color: #f0f0f0;
+    color: #888;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  .file-info {
+    font-size: 0.85rem;
+    color: #777;
+    text-align: center;
+  }
+  
+  /* === Account Section === */
+  .account-details-section {
+    padding: 1.5rem;
+  }
+  
+  .account-details-section h3 {
+    font-size: 1.7rem;
+    color: #222;
+    margin-bottom: 1.5rem;
+  }
+  
+  .success-message {
+    color: #28a745;
+    background: #e8f5e9;
+    border: 1px solid #c3e6cb;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: 500;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem 1.5rem;
+  }
+  
+  form > div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    font-weight: 600;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+    color: #444;
+  }
+  
+  .form-input {
+    padding: 0.85rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #fdfdfd;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  
+  .form-input:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 6px rgba(0, 123, 255, 0.3);
+    background-color: #fff;
+  }
+  
+  .error {
+    border-color: #dc3545;
+    box-shadow: 0 0 5px rgba(220, 53, 69, 0.3);
+  }
+  
+  .error-message {
+    font-size: 0.85rem;
+    color: #dc3545;
+    margin-top: 0.3rem;
+  }
+  
+  .selected-genres {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.5rem;
+  }
+  
+  .selected-genres span {
+    font-weight: 600;
+    color: #007bff;
+  }
+  
+  /* === Buttons === */
+  .button {
+    padding: 0.9rem 1.4rem;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s;
+  }
+  
+  .button:hover {
+    transform: translateY(-2px);
+  }
+  
+  .save-button {
+    background-color: #007bff;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-button {
+    background-color: #28a745;
+  }
+  
+  .edit-button:hover {
+    background-color: #218838;
+  }
+  
+  .cancel-button {
+    background-color: #6c757d;
+  }
+  
+  .cancel-button:hover {
+    background-color: #5a6268;
+  }
+  
+  /* === Responsive === */
+  @media (max-width: 768px) {
+    .profile-form-container {
+      grid-template-columns: 1fr;
+      padding: 2rem;
+    }
+  
+    .profile-picture-section {
+      border-right: none;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 2rem;
+    }
+  
+    form {
+      grid-template-columns: 1fr;
+    }
+  
+    .button {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  }
+  

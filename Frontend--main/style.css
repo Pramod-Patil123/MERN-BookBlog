@@ -1,0 +1,24 @@
+body {
+    background: #f4f4f4;
+    font-family: Arial, sans-serif;
+  }
+  form {
+    background: #fff;
+    padding: 20px;
+    max-width: 320px;
+    margin: 60px auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+  }
+  input, button {
+    margin-bottom: 12px;
+    padding: 10px;
+    font-size: 16px;
+  }
+  #error {
+    color: red;
+    font-size: 14px;
+  }
+  
